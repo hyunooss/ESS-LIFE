@@ -1,6 +1,7 @@
 # ESS 배터리 수명 예측
 
-초기 100사이클의 기록으로 배터리의 총 수명(`cycle_life`)을 예측하는 회귀 프로젝트입니다. 사전 EDA를 바탕으로 Feature와 모델을 비교하고, Batch 2 성능과 논문 참고값 9.1%의 차이를 해석합니다.
+초기 100사이클의 기록으로 배터리의 총 수명(`cycle_life`)을 예측하는 회귀 프로젝트입니다.  
+사전 EDA를 바탕으로 Feature와 모델을 비교하고, Batch 2 성능과 논문 참고값 9.1%의 차이를 해석합니다.
 
 ## 프로젝트 개요
 
@@ -58,7 +59,8 @@ python -m jupyterlab ESS-Life.ipynb
 python run.py --output-dir results_cli
 ```
 
-CLI 성능표는 `results_cli/model_performance.csv`에 저장되며 README·노트북의 저장 출력은 갱신하지 않습니다. 노트북은 `results/performance.csv`를 저장하고 README의 모델·성능·오류·ESS 해석 영역을 갱신합니다. 코드 검증은 `python -m unittest discover -s tests -v`로 실행합니다.
+CLI 성능표는 `results_cli/model_performance.csv`에 저장되며 README·노트북의 저장 출력은 갱신하지 않습니다.
+노트북은 `results/performance.csv`를 저장하고 README의 모델·성능·오류·ESS 해석 영역을 갱신합니다. 코드 검증은 `python -m unittest discover -s tests -v`로 실행합니다.
 
 Batch 3가 필요하면 노트북의 `EVALUATE_BATCH3=True` 또는 CLI의 `--batch3`를 사용합니다. 고정된 모델로 평가하며, B3 MAPE와 B2−B3·9.1−B3 Gap을 추가로 저장합니다.
 
@@ -83,7 +85,9 @@ Batch 3가 필요하면 노트북의 `EVALUATE_BATCH3=True` 또는 CLI의 `--bat
 | 온도·충전 정책           | 평균 온도와 C1·전환 SOC·C2를 함께 추가; 중복이 큰 최고 온도는 제외    |
 | 용량 기울기·IR           | 2~100사이클 기울기, 유효 IR 평균을 단계적으로 추가하여 개선 여부 확인 |
 
-용량·IR·충전 시간의 0 이하 값과 사전 EDA에서 확인한 고립된 용량 스파이크는 해당 값만 결측 처리합니다. 100분 초과 충전 시간은 유지합니다. 결측 대체와 표준화는 각 학습 fold 안에서만 수행하며, 정답·마지막 용량·전체 기록 길이·100사이클 이후 값·knee·배치 및 셀 ID는 입력에 넣지 않습니다.
+용량·IR·충전 시간의 0 이하 값과 사전 EDA에서 확인한 고립된 용량 스파이크는 해당 값만 결측 처리합니다.  
+100분 초과 충전 시간은 유지합니다.
+결측 대체와 표준화는 각 학습 fold 안에서만 수행하며, 정답·마지막 용량·전체 기록 길이·100사이클 이후 값·knee·배치 및 셀 ID는 입력에 넣지 않습니다.
 
 ### 모델 선택 및 근거
 
