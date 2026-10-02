@@ -9,7 +9,8 @@
 - 학습 데이터: Batch 1 (`2017-05-12`), 원본 46개 중 EDA 분석군 36개
 - 평가 데이터: Batch 2 (`2018-02-20`), 수명 라벨이 있는 39개
 - 태스크: **Regression — 총 Cycle Life 예측**
-- 추가 평가: Batch 3 (`2018-04-12`)는 선택 사항이며 기본 실행에서는 제외합니다.
+- EDA: Batch 1·2·3의 분포·열화·충전 조건을 비교합니다.
+- 추가 모델 평가: Batch 3 (`2018-04-12`)는 선택 사항이며 기본 모델 실행에서는 제외합니다.
 
 예측 단위는 배터리 셀 1개입니다. 초기 100사이클 이후의 잔여 수명이 아니라 제공된 총 수명을 예측하며, `2018-04-03 varcharge` 파일은 사용하지 않습니다.
 
@@ -21,12 +22,14 @@
 ```text
 ess-life/
 ├── dataset/                       # 원본 .mat 파일
-├── ESS-Life.ipynb                 # Feature 확인·모델 비교·평가·해석
+├── 1_eda.ipynb                    # 데이터 점검·5가지 EDA·모델 설계 (Day 1)
+├── 2_ESS-Life.ipynb               # Feature 확인·모델 비교·평가·해석 (Day 2)
 ├── battery_features.py            # 초기 Feature 추출·품질 확인
 ├── battery_modeling.py            # 분할·학습·평가·그래프
 ├── run.py                         # 터미널 실행
 ├── tests/                         # Feature·분할·계산 검증
 ├── results/                       # 실행으로 생성한 결과
+│   ├── eda/                      # EDA 표 17개와 그림 8개
 │   ├── performance.csv            # 노트북의 성능표
 │   ├── model_comparison.csv       # 모델·Feature별 CV 비교
 │   ├── batch2_predictions.csv     # 노트북의 셀별 B2 예측
@@ -42,29 +45,38 @@ Python 3.11에서 확인했습니다. 이 README가 있는 `ess-life` 폴더로 
 
 ```bash
 python -m pip install -r requirements.txt
-python -m jupyterlab ESS-Life.ipynb
+python -m jupyterlab 1_eda.ipynb
 ```
 
-노트북에서 **Restart Kernel and Run All Cells**를 실행합니다. 기본 데이터 위치는 `ess-life` 내부의 `dataset`이며, 다르면 첫 셀의 `DATA_DIR` 또는 `ESS_DATA_DIR` 환경변수를 변경합니다.
+`1_eda.ipynb`에서 **Restart Kernel and Run All Cells**를 실행해 데이터와 모델 설계를 확인합니다.
+이후 `2_ESS-Life.ipynb`를 열어 같은 방법으로 학습·평가를 진행합니다.
+두 노트북은 각각 원본 데이터를 읽으므로 모델 노트북만 따로 실행할 수도 있습니다.
+기본 데이터 위치는 `ess-life` 내부의 `dataset`이며, 다르면 준비 셀의 `DATA_DIR` 또는 `ESS_DATA_DIR` 환경변수를 변경합니다.
 
-| 배치           | 데이터 파일                                            |
-| -------------- | ------------------------------------------------------ |
-| Batch 1        | `2017-05-12_batchdata_updated_struct_errorcorrect.mat` |
-| Batch 2        | `2018-02-20_batchdata_updated_struct_errorcorrect.mat` |
-| Batch 3 (선택) | `2018-04-12_batchdata_updated_struct_errorcorrect.mat` |
+| 배치                              | 데이터 파일                                            |
+| --------------------------------- | ------------------------------------------------------ |
+| Batch 1                           | `2017-05-12_batchdata_updated_struct_errorcorrect.mat` |
+| Batch 2                           | `2018-02-20_batchdata_updated_struct_errorcorrect.mat` |
+| Batch 3 (EDA 필수·모델 평가 선택) | `2018-04-12_batchdata_updated_struct_errorcorrect.mat` |
 
-터미널에서 실행할 수도 있습니다.
+모델 학습·평가는 터미널에서 실행할 수도 있습니다.
 
 ```bash
 python run.py --output-dir results_cli
 ```
 
 CLI 성능표는 `results_cli/model_performance.csv`에 저장되며 README·노트북의 저장 출력은 갱신하지 않습니다.
-노트북은 `results/performance.csv`를 저장하고 README의 모델·성능·오류·ESS 해석 영역을 갱신합니다. 코드 검증은 `python -m unittest discover -s tests -v`로 실행합니다.
+`1_eda.ipynb`는 EDA 표와 그림을 `results/eda/`에 저장합니다.
+`2_ESS-Life.ipynb`는 `results/performance.csv`를 저장하고 README의 모델·성능·오류·ESS 해석 영역을 갱신합니다.
+코드 검증은 `python -m unittest discover -s tests -v`로 실행합니다.
 
-Batch 3가 필요하면 노트북의 `EVALUATE_BATCH3=True` 또는 CLI의 `--batch3`를 사용합니다. 고정된 모델로 평가하며, B3 MAPE와 B2−B3·9.1−B3 Gap을 추가로 저장합니다.
+Batch 3의 모델 평가가 필요하면 `2_ESS-Life.ipynb`의 `EVALUATE_BATCH3=True` 또는 CLI의 `--batch3`를 사용합니다. 고정된 모델로 평가하며, B3 MAPE와 B2−B3·9.1−B3 Gap을 추가로 저장합니다.
 
 ## EDA
+
+[`1_eda.ipynb`](1_eda.ipynb)에서 데이터 점검 → EDA 1~5 → Feature·모델 설계 → 검증 계획 순서로 확인할 수 있습니다.
+각 분석에는 계산 코드, 그래프·표, 확인한 점과 모델 전략을 함께 정리했습니다.
+큰 충전 시간의 민감도 분석과 주요 수치의 재현 점검도 포함합니다.
 
 아래는 사전 EDA의 핵심 발견입니다. 분포는 B1 원본 46개를 사용했으며, Feature 관계는 B1 분석군 36개·B2 39개·B3 44개를 기준으로 확인했습니다.
 

@@ -1,0 +1,21 @@
+﻿batch,cell_id,cycle_life,last_qd,cohort_rule
+Batch 1,b1c0,1190.0,1.0262098,finite_positive_target_and_last_qd_le_0.885
+Batch 1,b1c1,1179.0,1.0382246,finite_positive_target_and_last_qd_le_0.885
+Batch 1,b1c2,1177.0,1.0432786,finite_positive_target_and_last_qd_le_0.885
+Batch 1,b1c3,1226.0,0.97092122,finite_positive_target_and_last_qd_le_0.885
+Batch 1,b1c4,1227.0,1.0219597,finite_positive_target_and_last_qd_le_0.885
+Batch 1,b1c8,879.0,0.96902454,finite_positive_target_and_last_qd_le_0.885
+Batch 1,b1c10,906.0,0.96101874,finite_positive_target_and_last_qd_le_0.885
+Batch 1,b1c12,902.0,0.91311944,finite_positive_target_and_last_qd_le_0.885
+Batch 1,b1c13,897.0,0.92313582,finite_positive_target_and_last_qd_le_0.885
+Batch 1,b1c22,891.0,0.96327895,finite_positive_target_and_last_qd_le_0.885
+Batch 2,b2c22,,1.0556005,finite_positive_target
+Batch 2,b2c23,,0.97824305,finite_positive_target
+Batch 2,b2c35,,0.88112044,finite_positive_target
+Batch 2,b2c36,,0.88107425,finite_positive_target
+Batch 2,b2c37,,2.1693008,finite_positive_target
+Batch 2,b2c38,,2.1653843,finite_positive_target
+Batch 2,b2c39,,0.88120419,finite_positive_target
+Batch 2,b2c40,,0.88021344,finite_positive_target
+Batch 3,b3c23,,0.93701142,finite_positive_target
+Batch 3,b3c32,,0.97388279,finite_positive_target

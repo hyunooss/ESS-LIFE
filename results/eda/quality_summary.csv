@@ -1,0 +1,4 @@
+﻿batch,QDischarge_early_invalid_n,IR_early_invalid_n,chargetime_early_invalid_n,Tavg_early_invalid_n,QD_isolated_spikes_excluded_n,chargetime_gt100_n
+Batch 1,2,11,0,0,2,3
+Batch 2,0,693,0,0,0,19
+Batch 3,0,0,0,0,0,0

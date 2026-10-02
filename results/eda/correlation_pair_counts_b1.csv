@@ -1,0 +1,9 @@
+﻿feature,dq_log10_variance,dq_min_Ah,QDischarge_delta_100_2,IR_mean_2_100,Tavg_mean_2_100,Tmax_mean_2_100,chargetime_mean_2_100,cycle_life
+dq_log10_variance,36,36,36,36,36,36,36,36
+dq_min_Ah,36,36,36,36,36,36,36,36
+QDischarge_delta_100_2,36,36,36,36,36,36,36,36
+IR_mean_2_100,36,36,36,36,36,36,36,36
+Tavg_mean_2_100,36,36,36,36,36,36,36,36
+Tmax_mean_2_100,36,36,36,36,36,36,36,36
+chargetime_mean_2_100,36,36,36,36,36,36,36,36
+cycle_life,36,36,36,36,36,36,36,36
