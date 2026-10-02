@@ -1,0 +1,8 @@
+﻿cell_id,batch,policy_group,quality_flags,role,actual_cycles,predicted_cycles,error_cycles,absolute_error,ape_pct,nonpositive_prediction,outside_training_feature_range,out_of_range_features,missing_feature_count,below_training_life_range,above_training_life_range
+b1c5,Batch 1,4.4C(80%)-4.4C,chargetime_gt100_retained:1,Valid (Batch 1 Hold-out),1074.0,918.5283322090543,-155.47166779094573,155.47166779094573,14.475946721689546,False,True,dq_log10_variance,0,False,True
+b1c6,Batch 1,4.8C(80%)-4.8C,IR_invalid:1,Valid (Batch 1 Hold-out),636.0,756.8934228226714,120.89342282267137,120.89342282267137,19.008399814885436,False,False,,0,False,False
+b1c7,Batch 1,4.8C(80%)-4.8C,IR_invalid:1,Valid (Batch 1 Hold-out),870.0,775.8742333446053,-94.12576665539473,94.12576665539473,10.819053638551118,False,False,,0,False,False
+b1c38,Batch 1,7C(40%)-3.6C,ok,Valid (Batch 1 Hold-out),617.0,611.2916536264659,-5.708346373534141,5.708346373534141,0.9251776942518867,False,False,,0,False,False
+b1c39,Batch 1,7C(40%)-3.6C,ok,Valid (Batch 1 Hold-out),625.0,642.1545310816557,17.154531081655705,17.154531081655705,2.744724973064913,False,False,,0,False,False
+b1c40,Batch 1,8C(15%)-3.6C,ok,Valid (Batch 1 Hold-out),966.0,873.482993871943,-92.517006128057,92.517006128057,9.577329826921014,False,False,,0,False,False
+b1c41,Batch 1,8C(15%)-3.6C,ok,Valid (Batch 1 Hold-out),1051.0,879.643591395798,-171.356408604202,171.356408604202,16.30413021923901,False,False,,0,False,False

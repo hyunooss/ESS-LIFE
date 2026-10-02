@@ -1,0 +1,20 @@
+# 원본 데이터는 로컬에서 준비합니다.
+dataset/*
+!dataset/README.md
+*.mat
+
+# Python 환경 및 캐시
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# 로컬 설정 및 중복 실행 결과
+.env
+.env.*
+!.env.example
+.DS_Store
+results_cli/

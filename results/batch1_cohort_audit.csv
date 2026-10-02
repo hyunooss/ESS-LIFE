@@ -1,0 +1,47 @@
+﻿cell_id,batch,cycle_life,last_qd,early_100_coverage,quality_flags,included,reason
+b1c0,Batch 1,1190.0,1.0262098,True,QD_audited_spike_removed:cycle12,False,수명 또는 마지막 용량 기준 미충족: 학습 보류
+b1c1,Batch 1,1179.0,1.0382246,True,IR_invalid:1,False,수명 또는 마지막 용량 기준 미충족: 학습 보류
+b1c2,Batch 1,1177.0,1.0432786,True,IR_invalid:1,False,수명 또는 마지막 용량 기준 미충족: 학습 보류
+b1c3,Batch 1,1226.0,0.97092122,True,IR_invalid:1,False,수명 또는 마지막 용량 기준 미충족: 학습 보류
+b1c4,Batch 1,1227.0,1.0219597,True,IR_invalid:1,False,수명 또는 마지막 용량 기준 미충족: 학습 보류
+b1c5,Batch 1,1074.0,0.88053626,True,chargetime_gt100_retained:1,True,EDA 분석군 유지
+b1c6,Batch 1,636.0,0.8800565,True,IR_invalid:1,True,EDA 분석군 유지
+b1c7,Batch 1,870.0,0.88110596,True,IR_invalid:1,True,EDA 분석군 유지
+b1c8,Batch 1,879.0,0.96902454,True,ok,False,수명 또는 마지막 용량 기준 미충족: 학습 보류
+b1c9,Batch 1,1054.0,0.8809284,True,ok,True,EDA 분석군 유지
+b1c10,Batch 1,906.0,0.96101874,True,IR_invalid:1,False,수명 또는 마지막 용량 기준 미충족: 학습 보류
+b1c11,Batch 1,788.0,0.88054359,True,IR_invalid:1,True,EDA 분석군 유지
+b1c12,Batch 1,902.0,0.91311944,True,ok,False,수명 또는 마지막 용량 기준 미충족: 학습 보류
+b1c13,Batch 1,897.0,0.92313582,True,ok,False,수명 또는 마지막 용량 기준 미충족: 학습 보류
+b1c14,Batch 1,880.0,0.8800649,True,chargetime_gt100_retained:1,True,EDA 분석군 유지
+b1c15,Batch 1,719.0,0.88298881,True,chargetime_gt100_retained:1,True,EDA 분석군 유지
+b1c16,Batch 1,862.0,0.88096577,True,IR_invalid:1,True,EDA 분석군 유지
+b1c17,Batch 1,857.0,0.8832469,True,ok,True,EDA 분석군 유지
+b1c18,Batch 1,691.0,0.88114411,True,QD_audited_spike_removed:cycle40,True,EDA 분석군 유지
+b1c19,Batch 1,788.0,0.88093972,True,ok,True,EDA 분석군 유지
+b1c20,Batch 1,534.0,0.88078493,True,IR_invalid:1,True,EDA 분석군 유지
+b1c21,Batch 1,559.0,0.88016534,True,IR_invalid:1,True,EDA 분석군 유지
+b1c22,Batch 1,891.0,0.96327895,True,ok,False,수명 또는 마지막 용량 기준 미충족: 학습 보류
+b1c23,Batch 1,1014.0,0.88066453,True,ok,True,EDA 분석군 유지
+b1c24,Batch 1,1017.0,0.88046598,True,ok,True,EDA 분석군 유지
+b1c25,Batch 1,854.0,0.88019997,True,ok,True,EDA 분석군 유지
+b1c26,Batch 1,870.0,0.88105017,True,ok,True,EDA 분석군 유지
+b1c27,Batch 1,842.0,0.88130057,True,ok,True,EDA 분석군 유지
+b1c28,Batch 1,860.0,0.88058227,True,ok,True,EDA 분석군 유지
+b1c29,Batch 1,917.0,0.88035375,True,ok,True,EDA 분석군 유지
+b1c30,Batch 1,709.0,0.88054287,True,ok,True,EDA 분석군 유지
+b1c31,Batch 1,876.0,0.88099223,True,ok,True,EDA 분석군 유지
+b1c32,Batch 1,731.0,0.88080907,True,ok,True,EDA 분석군 유지
+b1c33,Batch 1,757.0,0.88011229,True,ok,True,EDA 분석군 유지
+b1c34,Batch 1,742.0,0.88205445,True,ok,True,EDA 분석군 유지
+b1c35,Batch 1,703.0,0.8802399,True,ok,True,EDA 분석군 유지
+b1c36,Batch 1,704.0,0.88231802,True,ok,True,EDA 분석군 유지
+b1c37,Batch 1,648.0,0.88336319,True,ok,True,EDA 분석군 유지
+b1c38,Batch 1,617.0,0.88110942,True,ok,True,EDA 분석군 유지
+b1c39,Batch 1,625.0,0.88011074,True,ok,True,EDA 분석군 유지
+b1c40,Batch 1,966.0,0.88060951,True,ok,True,EDA 분석군 유지
+b1c41,Batch 1,1051.0,0.88106161,True,ok,True,EDA 분석군 유지
+b1c42,Batch 1,702.0,0.88035142,True,ok,True,EDA 분석군 유지
+b1c43,Batch 1,651.0,0.88044435,True,ok,True,EDA 분석군 유지
+b1c44,Batch 1,616.0,0.88048309,True,ok,True,EDA 분석군 유지
+b1c45,Batch 1,599.0,0.88104212,True,ok,True,EDA 분석군 유지

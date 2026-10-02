@@ -1,0 +1,37 @@
+﻿experiment_id,model,feature_set,n_features,cv_mape_pct,cv_std_pct,cv_mae,parameters
+SVR::F1_DeltaQ,SVR,F1_DeltaQ,1,8.045101047572238,1.7198749916652885,65.85411885853152,"{""model__C"": 1000.0, ""model__epsilon"": 10.0, ""model__gamma"": 0.01}"
+Linear Regression::F4_Slope_mean,Linear Regression,F4_Slope_mean,8,8.23224403734587,1.7003200311348436,62.16820375025759,{}
+Ridge::F3_Temperature_Policy_mean,Ridge,F3_Temperature_Policy_mean,7,8.244162098720595,1.0171016122857757,64.49507953686023,"{""model__alpha"": 1.0}"
+Ridge::F4_Slope_mean,Ridge,F4_Slope_mean,8,8.260179643011108,0.9325680052102218,64.78959499680704,"{""model__alpha"": 1.0}"
+SVR::F2_Capacity_Charge_median,SVR,F2_Capacity_Charge_median,3,8.364898834222059,1.864252475834651,67.6591794006198,"{""model__C"": 1000.0, ""model__epsilon"": 10.0, ""model__gamma"": 0.01}"
+Ridge::F5_IR_mean,Ridge,F5_IR_mean,9,8.57114905520316,1.9624819196389074,65.25662132597179,"{""model__alpha"": 0.01}"
+Ridge::F1_DeltaQ,Ridge,F1_DeltaQ,1,8.612354696640908,1.7904760137849633,69.84021955953912,"{""model__alpha"": 0.1}"
+Linear Regression::F5_IR_mean,Linear Regression,F5_IR_mean,9,8.61262352126876,2.060105341934199,65.73187523549849,{}
+Linear Regression::F1_DeltaQ,Linear Regression,F1_DeltaQ,1,8.616771550592247,1.7814957266621356,69.8894888175356,{}
+SVR::F2_Capacity_Charge_mean,SVR,F2_Capacity_Charge_mean,3,8.805123179662273,1.986624889730549,70.4746068911167,"{""model__C"": 1000.0, ""model__epsilon"": 30.0, ""model__gamma"": 0.01}"
+SVR::F4_Slope_mean,SVR,F4_Slope_mean,8,9.152542373034214,1.7587386012858939,72.35948276738172,"{""model__C"": 1000.0, ""model__epsilon"": 30.0, ""model__gamma"": 0.01}"
+SVR::F3_Temperature_Policy_mean,SVR,F3_Temperature_Policy_mean,7,9.620654243052043,2.3695011721806716,74.79486174754227,"{""model__C"": 1000.0, ""model__epsilon"": 30.0, ""model__gamma"": 0.01}"
+SVR::F5_IR_mean,SVR,F5_IR_mean,9,9.771601738694288,1.5157331945367505,75.85801369324619,"{""model__C"": 1000.0, ""model__epsilon"": 30.0, ""model__gamma"": 0.01}"
+SVR::F5_IR_median,SVR,F5_IR_median,9,9.831041154100355,4.335167322945792,70.67059583033098,"{""model__C"": 1000.0, ""model__epsilon"": 10.0, ""model__gamma"": ""scale""}"
+SVR::F4_Slope_median,SVR,F4_Slope_median,8,9.920811156647169,2.5433073758142855,76.52081092939031,"{""model__C"": 1000.0, ""model__epsilon"": 30.0, ""model__gamma"": 0.01}"
+Random Forest::F2_Capacity_Charge_median,Random Forest,F2_Capacity_Charge_median,3,9.93692168784944,4.112868038076474,74.49797260412429,"{""model__max_depth"": 2, ""model__min_samples_leaf"": 4}"
+Random Forest::F3_Temperature_Policy_median,Random Forest,F3_Temperature_Policy_median,7,9.965468217141664,4.33547182528173,74.14925008738179,"{""model__max_depth"": 2, ""model__min_samples_leaf"": 4}"
+Random Forest::F5_IR_median,Random Forest,F5_IR_median,9,9.98328791682642,4.303012450033442,74.16043568696736,"{""model__max_depth"": 2, ""model__min_samples_leaf"": 4}"
+Random Forest::F2_Capacity_Charge_mean,Random Forest,F2_Capacity_Charge_mean,3,10.017843041884708,4.008880774901456,75.28389758482258,"{""model__max_depth"": 2, ""model__min_samples_leaf"": 4}"
+Random Forest::F3_Temperature_Policy_mean,Random Forest,F3_Temperature_Policy_mean,7,10.04851128076335,4.022372114164909,75.08545165679998,"{""model__max_depth"": 2, ""model__min_samples_leaf"": 4}"
+Random Forest::F4_Slope_median,Random Forest,F4_Slope_median,8,10.064877078329445,4.266831226328879,74.97215737675909,"{""model__max_depth"": 2, ""model__min_samples_leaf"": 4}"
+Random Forest::F5_IR_mean,Random Forest,F5_IR_mean,9,10.121023275156867,3.9362592584215492,75.42845672814835,"{""model__max_depth"": 2, ""model__min_samples_leaf"": 4}"
+Random Forest::F4_Slope_mean,Random Forest,F4_Slope_mean,8,10.135241998818776,3.9404548511194273,75.75430372251205,"{""model__max_depth"": 2, ""model__min_samples_leaf"": 4}"
+Random Forest::F1_DeltaQ,Random Forest,F1_DeltaQ,1,10.151704291480549,3.8725935220979815,76.6597856476239,"{""model__max_depth"": 2, ""model__min_samples_leaf"": 4}"
+Ridge::F2_Capacity_Charge_median,Ridge,F2_Capacity_Charge_median,3,10.154043716998265,1.460287532577108,78.93679814191998,"{""model__alpha"": 10.0}"
+SVR::F3_Temperature_Policy_median,SVR,F3_Temperature_Policy_median,7,10.193414029412343,4.946889987663752,75.62113889238975,"{""model__C"": 1000.0, ""model__epsilon"": 30.0, ""model__gamma"": ""scale""}"
+Ridge::F2_Capacity_Charge_mean,Ridge,F2_Capacity_Charge_mean,3,10.935381692597227,2.9306477312537935,84.93146560463886,"{""model__alpha"": 10.0}"
+Linear Regression::F3_Temperature_Policy_mean,Linear Regression,F3_Temperature_Policy_mean,7,10.959019781716748,3.507955618692689,80.55957215705291,{}
+Ridge::F4_Slope_median,Ridge,F4_Slope_median,8,11.486318254509811,4.3300391540160295,85.868192492278,"{""model__alpha"": 10.0}"
+Ridge::F3_Temperature_Policy_median,Ridge,F3_Temperature_Policy_median,7,11.551457522247475,4.421652806721399,86.21074108605683,"{""model__alpha"": 10.0}"
+Linear Regression::F2_Capacity_Charge_median,Linear Regression,F2_Capacity_Charge_median,3,11.557595013596785,4.123618681657299,85.71966603693062,{}
+Linear Regression::F2_Capacity_Charge_mean,Linear Regression,F2_Capacity_Charge_mean,3,11.930073460063708,3.231799072599179,90.43663733699586,{}
+Ridge::F5_IR_median,Ridge,F5_IR_median,9,12.48745926812049,4.447605685971167,91.96840541297279,"{""model__alpha"": 10.0}"
+Linear Regression::F4_Slope_median,Linear Regression,F4_Slope_median,8,19.653861426407925,18.61265463199725,127.68515593355305,{}
+Linear Regression::F3_Temperature_Policy_median,Linear Regression,F3_Temperature_Policy_median,7,19.96721287058691,19.53506327306122,131.03327783665154,{}
+Linear Regression::F5_IR_median,Linear Regression,F5_IR_median,9,20.033973040685176,18.585639697503076,130.93992734307056,{}

@@ -1,0 +1,11 @@
+﻿fold,role,n_cells,n_policies,min_life,max_life
+1,fit,23,13,534.0,1054.0
+1,validation,6,3,599.0,917.0
+2,fit,23,13,534.0,1054.0
+2,validation,6,3,651.0,880.0
+3,fit,23,13,534.0,1054.0
+3,validation,6,3,648.0,1017.0
+4,fit,23,12,534.0,1017.0
+4,validation,6,4,703.0,1054.0
+5,fit,24,13,599.0,1054.0
+5,validation,5,3,534.0,788.0

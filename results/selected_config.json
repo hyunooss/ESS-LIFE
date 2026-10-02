@@ -1,0 +1,73 @@
+{
+  "experiment_id": "SVR::F1_DeltaQ",
+  "model": "SVR",
+  "feature_set": "F1_DeltaQ",
+  "n_features": 1,
+  "cv_mape_pct": 8.045101047572238,
+  "cv_std_pct": 1.7198749916652885,
+  "cv_mae": 65.85411885853152,
+  "parameters": {
+    "model__C": 1000.0,
+    "model__epsilon": 10.0,
+    "model__gamma": 0.01
+  },
+  "feature_columns": [
+    "dq_log10_variance"
+  ],
+  "tolerance_pp": 1.0,
+  "minimum_cv_mape_pct": 8.045101047572238,
+  "selection_reason": "CV 최저 MAPE + 1%p 이내 후보 중 Feature 수 우선, 다음으로 CV MAPE 비교",
+  "selection_signature": "9f6dabfa0bd1885f300d4c47e89cf138d440e8b6dd035a646a6d1893b2a1e3e7",
+  "random_state": 42,
+  "holdout_group_fraction": 0.2,
+  "cv_folds": 5,
+  "target": "cycle_life (total cycles)",
+  "feature_window": "summary cycles 2..100, Qdlin cycles 10 and 100",
+  "cohort": "Batch 1: positive label and 0 < last QD <= 0.885 Ah; fixed during prior EDA",
+  "selection_data": "Batch 1 training pool only",
+  "gap_formula": [
+    "Train - Valid",
+    "Valid - Test",
+    "9.1 - Test"
+  ],
+  "holdout_cell_ids": [
+    "b1c5",
+    "b1c6",
+    "b1c7",
+    "b1c38",
+    "b1c39",
+    "b1c40",
+    "b1c41"
+  ],
+  "cv_pool_cell_ids": [
+    "b1c9",
+    "b1c11",
+    "b1c14",
+    "b1c15",
+    "b1c16",
+    "b1c17",
+    "b1c18",
+    "b1c19",
+    "b1c20",
+    "b1c21",
+    "b1c23",
+    "b1c24",
+    "b1c25",
+    "b1c26",
+    "b1c27",
+    "b1c28",
+    "b1c29",
+    "b1c30",
+    "b1c31",
+    "b1c32",
+    "b1c33",
+    "b1c34",
+    "b1c35",
+    "b1c36",
+    "b1c37",
+    "b1c42",
+    "b1c43",
+    "b1c44",
+    "b1c45"
+  ]
+}

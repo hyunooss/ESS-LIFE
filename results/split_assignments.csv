@@ -1,0 +1,37 @@
+﻿cell_id,policy_group,cycle_life,split
+b1c5,4.4C(80%)-4.4C,1074.0,B1 hold-out
+b1c6,4.8C(80%)-4.8C,636.0,B1 hold-out
+b1c7,4.8C(80%)-4.8C,870.0,B1 hold-out
+b1c9,5.4C(40%)-3.6C,1054.0,B1 CV training pool
+b1c11,5.4C(50%)-3C,788.0,B1 CV training pool
+b1c14,5.4C(60%)-3C,880.0,B1 CV training pool
+b1c15,5.4C(60%)-3C,719.0,B1 CV training pool
+b1c16,5.4C(60%)-3.6C,862.0,B1 CV training pool
+b1c17,5.4C(60%)-3.6C,857.0,B1 CV training pool
+b1c18,5.4C(70%)-3C,691.0,B1 CV training pool
+b1c19,5.4C(70%)-3C,788.0,B1 CV training pool
+b1c20,5.4C(80%)-5.4C,534.0,B1 CV training pool
+b1c21,5.4C(80%)-5.4C,559.0,B1 CV training pool
+b1c23,6C(30%)-3.6C,1014.0,B1 CV training pool
+b1c24,6C(40%)-3C,1017.0,B1 CV training pool
+b1c25,6C(40%)-3C,854.0,B1 CV training pool
+b1c26,6C(40%)-3.6C,870.0,B1 CV training pool
+b1c27,6C(40%)-3.6C,842.0,B1 CV training pool
+b1c28,6C(50%)-3C,860.0,B1 CV training pool
+b1c29,6C(50%)-3C,917.0,B1 CV training pool
+b1c30,6C(50%)-3.6C,709.0,B1 CV training pool
+b1c31,6C(50%)-3.6C,876.0,B1 CV training pool
+b1c32,6C(60%)-3C,731.0,B1 CV training pool
+b1c33,6C(60%)-3C,757.0,B1 CV training pool
+b1c34,7C(30%)-3.6C,742.0,B1 CV training pool
+b1c35,7C(30%)-3.6C,703.0,B1 CV training pool
+b1c36,7C(40%)-3C,704.0,B1 CV training pool
+b1c37,7C(40%)-3C,648.0,B1 CV training pool
+b1c38,7C(40%)-3.6C,617.0,B1 hold-out
+b1c39,7C(40%)-3.6C,625.0,B1 hold-out
+b1c40,8C(15%)-3.6C,966.0,B1 hold-out
+b1c41,8C(15%)-3.6C,1051.0,B1 hold-out
+b1c42,8C(25%)-3.6C,702.0,B1 CV training pool
+b1c43,8C(25%)-3.6C,651.0,B1 CV training pool
+b1c44,8C(35%)-3.6C,616.0,B1 CV training pool
+b1c45,8C(35%)-3.6C,599.0,B1 CV training pool
